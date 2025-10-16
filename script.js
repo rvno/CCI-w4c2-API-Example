@@ -60,6 +60,17 @@ function launchEm() {
     } else {
       astroEls[i].style.setProperty('--distance', initDistance / greatestDistance);
     }
+    let summary = document.createElement('p');
+
+    if (initDistance === 0) {
+      summary.innerHTML = 'only touched grass';
+      summary.classList.add('grass')
+    } else {
+      summary.innerHTML = `traveled for ${initDistance} days!`
+      summary.classList.add('purple')
+    }
+
+    astroEls[i].appendChild(summary);
     astroEls[i].classList.add('flying');
   })
 }

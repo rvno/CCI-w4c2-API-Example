@@ -46,3 +46,13 @@ pre {
 .hidden {
     display: none;
 }
+
+.grass {
+    background-color: forestgreen;
+    color: white;
+}
+
+.purple {
+    background-color: magenta;
+    color: white;
+}
