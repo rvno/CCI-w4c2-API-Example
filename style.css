@@ -4,8 +4,7 @@
 }
 
 #craft-iss {
-    background-color: black;
-    color: cyan;
+    color: black;
 }
 
 #craft-tiangong {
@@ -13,7 +12,37 @@
     color: yellow;
 }
 
+#spacetrack {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 60vh;
+}
+
 .astro {
-    display: inline-block;
+    --distance: 0;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    will-change: transform;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .2s;
+}
+
+.astro.flying {
+    transform: translateY(calc(-1 * var(--distance) * 60vh));
+}
+
+pre {
+    display: block;
+}
+
+.astro__image {
+    width: 60px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
 }

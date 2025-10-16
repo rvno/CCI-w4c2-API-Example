@@ -14,13 +14,10 @@
 
   <body>
     <h1>JSON Example</h1>
-    <p id="status">Just lookin at the stars...</p>
-    <button onclick="checkForAstronauts(this)">Call out to the Void?</button>
-
-    <div id="craft-iss" class="craft"></div>
-    <div id="craft-tiangong" class="craft"></div>
+    <p id="status">On standby...ymmv</p>
+    <button onclick="checkForAstronauts(this)">Astronauts assemble</button>
+    <button id="launch" class="hidden" onclick="launchEm()">Launch em</button>
     <pre>
-        
         
         
         *  .  . *       *    .        .        .   *    ..
@@ -30,7 +27,9 @@
         /   /\  .     ###\#|#/###   ..    *    .      *  .  ..  *
        /___/  ^8/      ###\|/###  *    *            .      *   *
        |   ||%%(        # }|{  #
-       |___|,  \\         }|{</pre
-    >
+       |___|,  \\         }|{
+    </pre>
+    <div id="spacetrack"></div>
+
   </body>
 </html>
