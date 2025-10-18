@@ -7,6 +7,7 @@ const launchButton = document.getElementById('launch');
 let distances = [];
 let astronauts = [];
 let astroEls = [];
+
 function checkForAstronauts(button) {
   button.style.display = "none"; // hide button
 

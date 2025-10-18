@@ -1,0 +1,191 @@
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.citations {
+	position: relative;
+}
+.citation {
+	width: 80vw;
+	border: 1px solid black;
+	background: #fff;
+}
+
+.citation--floating {
+	--left: 0;
+	--top: 0;
+	position: absolute;
+	left: var(--left);
+	top: var(--top);
+}
+
+.citation--floating:focus {
+	outline: 10px solid blue;
+	z-index: 999999;
+}
+
+.citation--floating {
+	cursor: pointer;
+}
+
+.citation__content {
+	padding: .5vh 2vh 3.5vh;
+}
+
+.citation::before,
+.citation::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 30px;
+	background: black;
+}
+
+
+.citation__logo {
+	display: block;
+	margin: 3vh auto 4vh;
+	max-width: 90%;
+}
+
+.citation__title {
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: center;
+}
+
+.citation__description {
+	font-size: 0.75em;
+	padding: 0 1vw;
+	text-transform: uppercase;
+}
+
+.citation__reference {
+	text-transform: uppercase;
+	width: 100%;
+	position: relative;
+}
+
+.citation__reference__number {
+	font-size: 1.25em;
+	font-weight: bold;
+	position: absolute;
+	top: -0.5em;
+	right: 35%;
+}
+
+.citation__data {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	border: 1px solid black;
+	margin-top: 15px;
+}
+
+.citation__data__type:not(:first-of-type) {
+	border-top: 1px solid black;
+}
+
+.citation__data__type {
+	padding: 0.5em 0.5em;
+	position: relative;
+}
+
+.citation__data__type--violation {
+	grid-column: 1/-1;
+}
+
+.citation__data__type--amount {
+	grid-column: 1/-1;
+}
+
+.obnoxious {
+	text-transform: uppercase;
+	font-size: 0.7em;
+	position: absolute;
+	top: 0.25em;
+	left: 0.25em;
+	font-weight: bold;
+}
+
+.blue {
+	color: blue;
+}
+
+.citation__footer {
+	text-transform: uppercase;
+}
+
+.citation__footer h3 {
+	text-transform: uppercase;
+	margin: 0 auto;
+	display: block;
+	clear: both;
+	text-align: center;
+}
+
+.citation__footer hr {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.citation__footer__star {
+	text-align: left;
+	float: right;
+	margin-right: 20vw;
+}
+
+.citation__footer__footnote {
+	clear: both;
+	font-size: 0.6em;
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	background: white;
+}
+
+.modal--open {
+	display: block;
+	pointer-events: all;
+}
+
+.plate {
+	--pLeft: 0;
+	--pTop: 0;
+	position: absolute;
+	left: var(--pLeft);
+	top: var(--pTop);
+	border: 5px solid blue;
+	padding: 15px 40px;
+	color: navy;
+	font-size: 32px;
+	border-radius: 10px;
+}
+
+.reset {
+	position: fixed;
+	top: 40px;
+	right: 40px;
+	font-size: 32px;
+	padding: 8px;
+	color: red;
+}
+
+@media screen and (min-width: 720px) {
+	.citation {
+		width: 50vw;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.citation {
+		width: 30vw;
+	}
+}

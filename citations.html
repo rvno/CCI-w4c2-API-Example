@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>SFMTA Citations</title>
+
+  <!-- The website stylesheet -->
+  <link rel="stylesheet" href="citations.css" />
+
+  <!-- The website JavaScript file -->
+  <script src="citations-script.js" defer></script>
+</head>
+
+<body>
+  <h1>Site.4.Citations</h1>
+  <button onclick="checkForCitations(this)">What's the damage?</button>
+  <div class="citations">
+    <div class="citation" tabindex="1">
+      <div class="citation__content">
+        <hr>
+        <img class="citation__logo" src="sfmta-logo.png" alt="SFMTA Logo" />
+        <h2 class="citation__title">Notice of Parking Citation</h2>
+        <p class="citation__description">The vehicle described below is illegally parked in violation of the section
+          referenced below.<br><br><b>Payment</b> or request for administrative review is required <b>within 21 days</b>
+          or further penalties may be assessed.</em></p>
+        <div class="citation__reference">
+          <span class="citation__reference__label">Citation #</span>
+          <span class="citation__reference__number">993334720</span>
+        </div>
+        <div class="citation__data">
+          <div class="citation__data__type citation__data__type--violation"><span class="obnoxious blue">In violation of
+              section</span><strong>STR CLEAN</strong></div>
+          <div class="citation__data__type citation__data__type--amount">AMOUNT DUE:<strong>$105.00</strong></div>
+        </div>
+        <p class="citation__comment">Comments: <span>:(</span></p>
+        <p class="citation__post">Posted</p>
+        <div class="citation__footer">
+          <h3 class="blue"><i>Certificate of Correction</i></h3>
+          <p class="citation__footer__star">Star<br>No.</p>
+          <hr>
+          <p class="citation__footer__footnote">Officer's Signature CVC: 400(a) 5200 5201(a) 5201(b). 5201(c) 5204</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal"></div>
+  <a class="reset" href="citations.html">Reset</a>
+</body>
+
+</html>
