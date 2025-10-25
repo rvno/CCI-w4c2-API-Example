@@ -255,7 +255,7 @@ pInstance = new p5((p) => {
 			p.stroke(255);
 			p.noFill();
 			p.strokeWeight(2);
-			p.rect(drawX, centerY, rectW, rectH);
+			p.rect(drawX, centerY, rectW, bassLevel * 4);
 			p.pop();
 
 			p.noStroke();
