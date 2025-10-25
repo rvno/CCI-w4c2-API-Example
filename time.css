@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  
+}
+#channels {
+  text-align: center;;
+  margin: 0 auto;
+}
+#p5-holder {
+  display: flex;
+  margin-top: 2rem;
+  border: 2px solid #333;
+  overflow: hidden;
+  width: fit-content;
+  margin-inline: auto;
+}
