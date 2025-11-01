@@ -6,7 +6,7 @@ const app = express();
 const port = Number(process.env.PORT || 3000);
 const server = app.listen(port);
 
-app.use(express.static("monoplzzz/public"));
+app.use(express.static("monoplzzz/"));
 
 console.log(`Server is listening on port ${port}`);
 
