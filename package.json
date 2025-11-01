@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "monoplzzz": "node monoplzzz/server.js"
   },
   "keywords": [
     "database",
@@ -10,6 +11,7 @@
     "tone": "^15.1.22",
     "@seald-io/nedb": "^4.1.1",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1"
   }
 }
